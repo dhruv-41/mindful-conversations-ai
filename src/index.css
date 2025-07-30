@@ -8,35 +8,63 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Therapeutic color palette - calming blues and warm grays */
+    --background: 210 20% 98%;
+    --foreground: 215 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Calming primary - soft therapeutic blue */
+    --primary: 210 50% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 210 40% 85%;
+    --primary-glow: 210 60% 65%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm, supportive secondary */
+    --secondary: 25 40% 88%;
+    --secondary-foreground: 25 30% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Gentle muted tones */
+    --muted: 210 15% 94%;
+    --muted-foreground: 215 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Calm accent */
+    --accent: 170 30% 80%;
+    --accent-foreground: 170 40% 20%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Crisis/warning colors */
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --warning: 35 85% 60%;
+    --warning-foreground: 35 100% 15%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Therapeutic green for positive states */
+    --success: 145 40% 50%;
+    --success-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    --border: 210 25% 88%;
+    --input: 210 25% 92%;
+    --ring: 210 50% 45%;
+
+    --radius: 1rem;
+
+    /* Therapeutic gradients */
+    --gradient-calm: linear-gradient(135deg, hsl(var(--primary-soft)), hsl(var(--accent)));
+    --gradient-warm: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--primary-soft)));
+    --gradient-therapeutic: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Therapeutic shadows */
+    --shadow-gentle: 0 4px 20px -8px hsl(var(--primary) / 0.15);
+    --shadow-warm: 0 8px 30px -12px hsl(var(--primary) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+
+    /* Smooth transitions */
+    --transition-therapeutic: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-gentle: all 0.3s ease-out;
 
     --sidebar-background: 0 0% 98%;
 
